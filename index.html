@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+
+    <!-- font end -->
     <title>Interactive Birthday</title>
     <style>
       body {
@@ -86,11 +89,13 @@
       }
 
       .messageContainer {
+        box-shadow: rgb(167, 83, 184) 5px 5px 25px;
+        margin-bottom: 70px;
         display: none;
-        background-color: #fffbcc;
+        background-color: rgb(159, 221, 221);
         padding: 20px;
-        border-radius: 10px;
-        border: 2px solid;
+        border-radius: 50px;
+        /* border: 7px solid; */
         border-image: linear-gradient(45deg, #ff7e5f, #feb47b) 1;
         text-align: center;
         position: absolute;
@@ -99,18 +104,37 @@
         right: 10%;
         transform: translateX(0);
         font-size: 18px;
-        color: black;
+        color: rgb(17, 0, 0);
         z-index: 10;
         max-width: 80%;
       }
-      .messi {
+      .happy {
+        color: #ff7e5f;
+      }
+      .year {
+        color: white;
+        margin-bottom: 70px;
+      }
+      .real {
         font-weight: bold;
-        color: darkorchid;
+        font-size: 60px;
+
+        font-weight: bold;
+        background: linear-gradient(90deg, tomato, brown, yellow, white);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .realme {
+        font-size: 20px;
+        font-weight: bold;
+        background: linear-gradient(90deg, tomato, brown, yellow, white);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       .neonText {
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 60px;
@@ -182,17 +206,19 @@
         <button id="button2">Button-2</button>
         <button id="button3">Button-3</button>
       </div>
-      <footer>I 💖 U <span class="messi">SADIYA</span>.</footer>
+      <footer>I 💖 U <span class="realme">Sadiya</span>.</footer>
     </div>
 
     <div class="neonText" id="neonMessage" style="display: none">
-      Happy New Year Sadiya.
+      Happy New Year <span class="real">"SADIYA"</span>
+      <h6 class="year">2025</h6>
     </div>
+
     <div class="messageContainer" id="messageContainer">
       "নতুন বছরের প্রতিটা মুহূর্ত হোক তোমার জন্য আশীর্বাদের মতো। তুমি আমার
       হৃদয়ের স্পন্দন, আমার জীবনের প্রতিটা স্বপ্নের অংশ। এই বছর তোমার হাসিতে
-      আমার পৃথিবী আরও রঙিন হয়ে উঠুক। যেখানে ই থাকো,আমাকে মনে রেখো। হ্যাপি নিউ
-      ইয়ার, আমার ভালোবাসা।"
+      আমার পৃথিবী আরও রঙিন হয়ে উঠুক। যেখানে ই থাকো,আমাকে মনে রেখো।
+      <span class="happy">হ্যাপি নিউ ইয়ার</span> আমার ভালোবাসা। 2025 শুভ হোক।"
     </div>
 
     <script>
